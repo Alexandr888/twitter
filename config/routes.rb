@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'users/show'
+
   match 'signup', to: "users#new", via: :get
   
   root 'static_pages#home'
